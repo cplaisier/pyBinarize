@@ -23,7 +23,7 @@ import pandas as pd
 import pyBinarize as pyBin
 
 # Read in data
-df1 = pd.read_csv('LGG_RNAseq.csv',header=0, index_col=0)
+df1 = pd.read_csv('exampleExp.csv',header=0, index_col=0)
 
 # Binarize a Series
 series1 = pyBin.binarize_kMeans(df1.iloc[0])
