@@ -26,10 +26,10 @@ import pyBinarize as pyBin
 df1 = pd.read_csv('exampleExp.csv',header=0, index_col=0)
 
 # Binarize a Series
-series1 = pyBin.binarize_kMeans(df1.iloc[0])
+series1 = pyBin.binarize_kMeans(df1.loc[2636])
 print(series1)
 
 # Binraize a DataFrame
-bin_df1 = pyBin.binarize_matrix(df1)
+bin_df1 = pyBin.binarize_kMeans_matrix(df1)
 print(bin_df1.shape)
 
