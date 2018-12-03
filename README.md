@@ -11,9 +11,13 @@ import pyBinarize
 
 The functions in pyBinarize are:
 
-* <b>binarize_matrix</b>(<i>df1</i>) - which binarizes a full Pandas DataFrame (df1) and returns the a new binarized Pandas DataFrame.
+* <b>binarize_kMeans_matrix</b>(<i>df1</i>) - which applies binarize_kMeans to a full Pandas DataFrame (df1) and returns the a new binarized Pandas DataFrame.
 
-* <b>binarize_kMeans</b>(<i>series1</i>) - which binarizes a single Pandas Series serires1 and returns a new binarized Pandas Series.
+* <b>binarize_kMeans</b>(<i>series1</i>) - which binarizes using k-means with k = 2 for a single Pandas Series serires1 and returns a new binarized Pandas Series.
+
+* <b>binarize_gtZero_matrix</b>(<i>df1</i>) - which applies binarize_gtZero to a full Pandas DataFrame (df1) and returns the a new binarized Pandas DataFrame.
+
+* <b>binarize_gtZero</b>(<i>series1</i>) - which dichotomizes using a greater than zero cutoff to binarize a single Pandas Series serires1 from scRNA-seq data and returns a new binarized Pandas Series.
 
 For example usage of the k-means functions please take a look at test.py:
 
